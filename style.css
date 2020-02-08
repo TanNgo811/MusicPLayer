@@ -258,7 +258,7 @@ li:before {
 #track-time
 {
     margin-top: .5rem;
-    height: 12px;
+    height: 20px;
     margin-bottom: 3px;
     overflow: hidden;
 }
@@ -286,6 +286,8 @@ li:before {
     color: white;
     background-color: transparent;
 }
+
+
 
 #seek-bar
 {
