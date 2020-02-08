@@ -318,10 +318,18 @@ li:before {
     font-weight: 700;
 }
 
-#ins-time, #s-hover
+#ins-time
 {
     background-color: white;
     opacity: .8;
+}
+
+#s-hover{
+    position: absolute;
+    background-color:rgb(66, 66, 66);
+    opacity: 0.8;
+    height: 6px;
+    border-radius: 2px;
 }
 
 #seek-bar
