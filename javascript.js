@@ -30,7 +30,7 @@ $(function(){
             author: 'The Paper Kites',
             title: 'Bloom',
             url: './music/Bloom - The Paper Kites (Nhac.Pro.Vn).mp3',
-            picture: './amy-humphries-8I8G_Rw9lRw-unsplash.jpg',
+            picture: './background/amy-humphries-8I8G_Rw9lRw-unsplash.jpg',
             year: '2015',
             duration: '22:00'
         },
@@ -39,7 +39,7 @@ $(function(){
             author: 'Keira Knightley',
             title: 'Coming Up Roses',
             url: './music/Coming_Up_Roses_-_Keira_Knightley_MP3_320kbps_-1.mp3',
-            picture: './nikita-tikhomirov-dv7cSiHurKM-unsplash.jpg',
+            picture: './background/nikita-tikhomirov-dv7cSiHurKM-unsplash.jpg',
             year: '2017',
             duration: '22:00'
         },
@@ -48,7 +48,7 @@ $(function(){
             author: 'Taylor Swift',
             title: 'Back To December',
             url: './music/Back To December (US Version)_Taylor Swift_-1364616.mp3',
-            picture: './lochlainn-riordan-G6CR8v_bts0-unsplash.jpg',
+            picture: './background/lochlainn-riordan-G6CR8v_bts0-unsplash.jpg',
             year: '2020',
             duration: '22:00'
         }
