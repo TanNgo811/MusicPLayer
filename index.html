@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Music Player</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=0.5, minimum-scale=0.5, width=device-width" />
+       
+        <!-- File CSS -->
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="main">
+            <div class="bg-artwork" id="bg-artwork"></div>
+            <div class="bg-layer"></div>
+            <div class="content container-fluid">
+                <nav class="new-container navi">
+                    <!-- Toggler/collapsibe Button -->
+                    <a class="navbar-toggler angle-left" type="button" href=""><i class="fas fa-angle-left"></i></a>
+                    
+                    <a class="navbar-toggler bell" type="button" href=""><i class="far fa-bell"></i></a>
+
+                    <!-- Brand -->
+                    <a class="navbar-brand brand" href="#"><img src="./logo-light.png" alt=""></a>
+                </nav> 
+                <div class="new-container">
+                    <div class="container-info">
+                        
+                        <div class="right-side">
+                            <p class="album">Album</p>
+                            <div class="flexbox song">
+                                <h1 id="track-name" class="song-name">When Legends Rise</h1>
+                                <a href="#"><i class="fas fa-random"></i></a>
+                            </div>
+                            <div class="flexbox singer">
+                                <p class="small-title">Artist</p>
+                                <p id="track-singer" class="main-title">Sam Mendes</p>
+                            </div>
+                            <div class="flexbox song-author">
+                                <p class="small-title">Author</p>
+                                <p id="track-author" class="main-title">Mc Donald</p>
+                            </div>
+                            <div class="flexbox year">
+                                <p class="small-title">Year</p>
+                                <p id="track-year" class="main-title">2018</p>
+                            </div>
+                            <!-- <div class="flexbox length">
+                                <p class="small-title">Duration</p>
+                                <p id="track-duration" class="main-title">2m 30s</p>
+                            </div> -->
+                        </div>
+                        
+                        <div class="left-side">
+                            <a href="#"><i class="fas fa-bars"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="new-container track">
+                    <div class="col-12">
+                        
+                        <div id="player-controls" class="player-controls">
+                            <div class="control">
+                                <div class="button" id="play-previous">
+                                    <i class="fas fa-backward"></i>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <div class="button" id="play-pause-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <div class="button" id="play-next">
+                                    <i class="fas fa-forward" ></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="player-track">
+                            <div id="track-time">
+                                <div id="current-time"></div>
+                                <div id="track-length"></div>
+                            </div>
+                            <div id="s-area" class="track-line">
+                                <div id="ins-time"></div>
+                                <div id="s-hover"></div>
+                                <div id="seek-bar"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="new-container list">
+                    <div class="col-12">
+                        <ol class="play-list">
+                            <li class="grid-item"><a href=""><i class="far fa-heart"></i></a><a href=""><i class="fas fa-redo-alt"></i></a><a href="#">the scent for the memories (feat. sarah)</a></li>
+                            <li class="grid-item"><a href=""><i class="far fa-heart"></i></a><a href=""><i class="fas fa-redo-alt"></i></a><a href="#">every part of me</a></li>
+                            <li class="grid-item"><a href=""><i class="far fa-heart"></i></a><a href=""><i class="fas fa-redo-alt"></i></a><a href="#">take it to the edge</a></li>
+                            <li class="grid-item"><a href=""><i class="far fa-heart"></i></a><a href=""><i class="fas fa-redo-alt"></i></a><a href="#">where we used to live</a></li>
+                            <li class="grid-item"><a href=""><i class="far fa-heart"></i></a><a href=""><i class="fas fa-redo-alt"></i></a><a href="#">broken tomorrow</a></li>
+                            <li class="grid-item"><a href=""><i class="far fa-heart"></i></a><a href=""><i class="fas fa-redo-alt"></i></a><a href="#">minute for a new day(feat. Lil Max)</a></li>
+                            <li class="grid-item"><a href=""><i class="far fa-heart"></i></a><a href=""><i class="fas fa-redo-alt"></i></a><a href="#">59</a></li>
+                            <li class="grid-item"><a href=""><i class="far fa-heart"></i></a><a href=""><i class="fas fa-redo-alt"></i></a><a href="#">cash for the dreams</a></li>
+                        </ol>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+        <script  type="text/javascript" src="./javascript.js"></script>
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/abd171a82c.js" crossorigin="anonymous"></script>
+    </body>
+</html>
